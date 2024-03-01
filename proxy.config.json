@@ -4,5 +4,23 @@
         "secure": false,
         "logLevel": "debug",
         "changeOrigin": true
+    },
+    "/api/listings/*": {
+        "target": "http://localhost:8080",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    },
+    "/api/listings/*/add-view": {
+        "target": "http://localhost:8080",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    },
+    "/api/users/*/listings": {
+        "target": "http://localhost:8080",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
     }
 }

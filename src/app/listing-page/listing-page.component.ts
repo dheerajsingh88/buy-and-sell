@@ -17,9 +17,8 @@ export class ListingsPageComponent implements OnInit {
   constructor(private listingsService: ListingsService) { }
 
   ngOnInit(): void {
-
+    alert('inside listing page')
     this.listingsService.getListings().subscribe(listings => this.listings = listings);
-    alert("test");
-  }
+    }
 
 }
